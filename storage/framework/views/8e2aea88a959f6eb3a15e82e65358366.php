@@ -1,0 +1,2 @@
+<button type="button" class="btn btn-danger light" data-bs-dismiss="modal"><?php echo app('translator')->get('general.close'); ?></button>
+<button type="submit" class="btn btn-primary"><?php echo app('translator')->get('general.save'); ?></button><?php /**PATH /var/www/html/applications/TourismCompany/src/../resources/views/modals/closed-days-footer.blade.php ENDPATH**/ ?>

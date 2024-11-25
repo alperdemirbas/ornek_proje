@@ -1,0 +1,337 @@
+::placeholder {
+    color:rgba(0,0,0,0.2)!important;
+}
+/*toggle button*/
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 13px;
+}
+
+.toggle-switch {
+    display: inline-block;
+    background: #D8DBE2;
+    border-radius: 16px;
+    margin-left: 20px;
+    padding-left: 0;
+    width: 50px;
+    height: 23px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+    content: "";
+}
+.toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #eee 100%);
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+}
+.toggle-checkbox:checked + .toggle-switch {
+    background: var(--primary);
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+    left: 29px;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.swal2-html-container {
+    line-height: 1.5em!important;
+}
+
+div:where(.swal2-container) div:where(.swal2-validation-message.success)::before {
+    content: "✓"!important;
+    display: inline-block;
+    width: 1.5em;
+    min-width: 1.5em;
+    height: 1.5em;
+    margin: 0 0.625em;
+    border-radius: 50%;
+    background-color: #74f278!important;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.phone-group .dropdown {
+    flex: 2!important;
+}
+
+.phone-group input {
+    flex: 5!important;
+}
+
+.dropzone .dz-message {
+    font-size: 16px!important;
+}
+
+.dropzone {
+    border: 2px dashed var(--primary)!important;
+}
+
+/**
+    animated success icon
+ */
+
+.dummy-positioning {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-icon {
+    display: inline-block;
+    width: 8em;
+    height: 8em;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 4px solid #96df8f;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    transform-origin: center;
+    -webkit-animation: showSuccess 180ms ease-in-out;
+    animation: showSuccess 180ms ease-in-out;
+    transform: scale(1);
+}
+
+.success-icon__tip, .success-icon__long {
+    display: block;
+    position: absolute;
+    height: 4px;
+    background-color: #96df8f;
+    border-radius: 10px;
+}
+.success-icon__tip {
+    width: 2.4em;
+    top: 4.3em;
+    left: 1.4em;
+    transform: rotate(45deg);
+    -webkit-animation: tipInPlace 300ms ease-in-out;
+    animation: tipInPlace 300ms ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 180ms;
+    animation-delay: 180ms;
+    visibility: hidden;
+}
+.success-icon__long {
+    width: 4em;
+    transform: rotate(-45deg);
+    top: 3.7em;
+    left: 2.75em;
+    -webkit-animation: longInPlace 140ms ease-in-out;
+    animation: longInPlace 140ms ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    -webkit-animation-delay: 440ms;
+    animation-delay: 440ms;
+}
+
+@-webkit-keyframes showSuccess {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes showSuccess {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes tipInPlace {
+    from {
+        width: 0em;
+        top: 0em;
+        left: -1.6em;
+    }
+    to {
+        width: 2.4em;
+        top: 4.3em;
+        left: 1.4em;
+        visibility: visible;
+    }
+}
+@keyframes tipInPlace {
+    from {
+        width: 0em;
+        top: 0em;
+        left: -1.6em;
+    }
+    to {
+        width: 2.4em;
+        top: 4.3em;
+        left: 1.4em;
+        visibility: visible;
+    }
+}
+@-webkit-keyframes longInPlace {
+    from {
+        width: 0em;
+        top: 5.1em;
+        left: 3.2em;
+    }
+    to {
+        width: 4em;
+        top: 3.7em;
+        left: 2.75em;
+        visibility: visible;
+    }
+}
+@keyframes longInPlace {
+    from {
+        width: 0em;
+        top: 5.1em;
+        left: 3.2em;
+    }
+    to {
+        width: 4em;
+        top: 3.7em;
+        left: 2.75em;
+        visibility: visible;
+    }
+}
+
+/** Datatable Pagination **/
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous, .dataTables_wrapper .dataTables_paginate .paginate_button.next{
+   width: unset!important;
+    font-size:unset!important;
+
+}
+
+.reviews .card {
+    height: auto;
+    border: none;
+    box-shadow: none;
+}
+
+.flex-list li{
+    font-size: 14px;
+    padding: 1rem 0;
+    font-weight: 100;
+}
+
+@media only screen and (min-width: 1024px) {
+    .flex-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex-list ul{
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .flex-list li{
+        width: 50%;
+    }
+}
+
+.map {
+    height: 400px;
+}
+
+.list-flex li {
+    display: flex;
+}
+
+.dropzone .dz-message {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.dropzone .dz-message {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ced4da;
+}
+
+.dropzone {
+    cursor: pointer;
+}
+
+.form-switch .form-check-input {
+    width: 3em;
+}
+
+.form-check-input:checked {
+    background-size: auto;
+}
+
+.pdf-img {
+    width: 100px;
+}
+
+#map {
+    height: 500px;
+}
+
+.list-style-1 > li {
+    border-bottom: 1px dashed var(--border);
+    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.custom-label-2 {
+    min-width: 180px;
+    display: inline-block;
+    color: #000;
+}
+
+.select2-container--default .select2-selection--single{
+    height: 48px!important;
+    border:1px solid #E3E3E3;
+}
+
+.cart-bottom {
+    background: #fff;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+}
+
+.phone-group select {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.phone-group input {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.phone-group .select2-container--default .select2-selection--single {
+    border-top-right-radius: unset!important;
+    border-bottom-right-radius: unset!important;
+}
+
+.phone-group .select2-container {
+    width: 50% !important;
+}

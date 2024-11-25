@@ -1,0 +1,26 @@
+{
+  "name": "rezyon/application-packages",
+  "version": "1.0",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Rezyon\\Applications\\Packages\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "rezyon/packages": "^1.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Rezyon\\Applications\\Packages\\ServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "orchestra/testbench": "^3.0"
+  }
+}

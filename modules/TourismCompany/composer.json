@@ -1,0 +1,31 @@
+{
+  "name": "rezyon/tourism-company",
+  "version": "1.0",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Rezyon\\TourismCompany\\": "src/"
+    },
+    "classmap": [
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {},
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Rezyon\\TourismCompany\\ServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "orchestra/testbench": "^3.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "rezyon/paytr",
+    "version": "1.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Rezyon\\Paytr\\": "src/"
+        },
+        "classmap": [
+            "database/seeds/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rezyon\\Paytr\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^3.0"
+    }
+}

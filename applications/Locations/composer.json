@@ -1,0 +1,27 @@
+{
+  "name": "rezyon/application-locations",
+  "version": "1.0",
+  "description": "Locations List 2024",
+  "autoload": {
+    "psr-4": {
+      "Rezyon\\Applications\\Locations\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Alper Demirbaş",
+      "email": "alper.demirbas@kaat.digital"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Rezyon\\Applications\\Locations\\ServiceProvider"
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "rezyon/flights",
+  "version": "1.0",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Rezyon\\Flights\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "rezyon/users": "^1.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Rezyon\\Flights\\ServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "orchestra/testbench": "^3.0"
+  }
+}
